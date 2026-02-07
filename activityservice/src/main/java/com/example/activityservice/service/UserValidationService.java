@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.WebClientResponseExcepti
 public class UserValidationService {
     private final WebClient userServiceWebClient;
     public boolean validateUser(String userId){
-        log.info("Calling user validatio API for userId: {}", userId);
+        log.info("Calling user validation API for userId: {}", userId);
         try{
             return userServiceWebClient
                     .get()
